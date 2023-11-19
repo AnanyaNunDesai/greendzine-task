@@ -26,3 +26,23 @@ button {
     height: 30px;
     width: 30px;
 }
+
+.selected-container {
+    box-sizing: border-box;
+    position: relative;
+}
+
+.selected-bg {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 15vw;
+    background: #38383880 0% 0% no-repeat padding-box;
+    mix-blend-mode: normal;
+    border: 1px solid #000000;
+    opacity: 1;
+    filter: blur(7px);
+    z-index: -1;
+}
