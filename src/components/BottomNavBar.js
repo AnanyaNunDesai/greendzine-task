@@ -1,5 +1,7 @@
 import React from "react"
 import { useNavigate } from "react-router-dom"
+import { FaHouse, FaUserLarge } from "react-icons/fa6"
+
 
 import './BottomNavBar.css'
 
@@ -8,8 +10,8 @@ function BottomNavBar() {
 
   return (
     <div className="navbar-container">
-      <p onClick={() => navigate("/home", { replace: true })}>HOME</p>
-      <p onClick={() => navigate("/employee", { replace: true })}>EMPL</p>
+      <button onClick={() => navigate("/home", { replace: true })}><FaHouse className="resized-lg" /></button>
+      <button onClick={() => navigate("/employee", { replace: true })}><FaUserLarge className="resized-lg" /></button>
     </div>
   )
 }
